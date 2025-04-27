@@ -4,7 +4,7 @@
 **Binary Symbolic Execution for Go Binaries**  
 *Find and verify uncontrolled recursion like a boss.*
 
-![Docker Pulls](https://img.shields.io/docker/pulls/gosonar?style=flat-square)
+![Docker Pulls](https://img.shields.io/docker/pulls/sakibanwar/gosonar?style=flat-square)
 ![License](https://img.shields.io/github/license/mdsakibanwar/gosonar?style=flat-square)
 ![Issues](https://img.shields.io/github/issues/mdsakibanwar/gosonar?style=flat-square)
 ![Stars](https://img.shields.io/github/stars/mdsakibanwar/gosonar?style=flat-square)
@@ -29,7 +29,7 @@ It supports two powerful analysis modes:
 ### 1. Pull the Docker Image
 
 ```bash
-docker pull gosonar:1.0
+docker pull sakibanwar/gosonar
 ```
 
 ---
