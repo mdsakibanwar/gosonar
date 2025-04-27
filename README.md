@@ -1,5 +1,5 @@
 <div align="center">
-# 🛡️ GoSonar
+🛡️ GoSonar
 
 **Binary Symbolic Execution for Go Binaries**  
 *Find and verify uncontrolled recursion like a boss.*
@@ -118,7 +118,7 @@ cd bins/<benchmark>/src
 
 ## 📜 License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [GPL-3.0](LICENSE).
 
 ---
 
