@@ -1,0 +1,16 @@
+logs/**
+db/**
+src/__pycache__/
+src/*.pyc
+src/*.pyo
+src/*.pyd
+src/*.egg-info/
+src/.pytest_cache/
+src/.mypy_cache/
+src/.coverage
+src/.hypothesis/
+src/.tox/
+src/.pytest/
+src/.mypy/
+src/.coverage.*
+src/.hypothesis/
