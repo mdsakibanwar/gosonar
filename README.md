@@ -1,8 +1,8 @@
 <div align="center">
-🛡️ GoSonar
+🛡️ **GoSonar**
 
 **Binary Symbolic Execution for Go Binaries**  
-*Find and verify uncontrolled recursion like a boss.*
+*Detect and verify uncontrolled recursions with ease.*
 
 ![Docker Pulls](https://img.shields.io/docker/pulls/sakibanwar/gosonar?style=flat-square)
 ![License](https://img.shields.io/github/license/mdsakibanwar/gosonar?style=flat-square)
@@ -14,22 +14,22 @@
 
 ## 🚀 Overview
 
-**GoSonar** is a tool for *binary symbolic execution* aimed at detecting **uncontrolled recursions** in Go binaries.
+**GoSonar** is a tool for *binary symbolic execution* designed to detect **uncontrolled recursions** in Go binaries. This project is based on the research presented in the paper ["GoSonar: Detecting Logical Vulnerabilities in Memory Safe Languages Using Inductive Constraint Reasoning"](https://www.computer.org/csdl/proceedings-article/sp/2025/223600a043/21B7QweuVUs), published at IEEE S&P 2025.
 
-It supports two powerful analysis modes:  
-- **Regular Mode** — Direct binary analysis.
-- **Call Resolver Mode** — Source-assisted AST parsing to resolve indirect calls.
+GoSonar offers two primary modes for analysis:
+- **Regular Mode**: Direct binary analysis.
+- **Call Resolver Mode**: Source-assisted AST parsing to resolve indirect calls.
 
-> 💬 *Recommended usage: via Docker container for maximum ease.*
+> 💬 *Recommended usage: Deploy via Docker container for optimal convenience.*
 
 ---
 
 ## 🐳 Quick Start
 
-### 1. Pull the Docker Image
+### 1. Pull & Run the Docker Image
 
 ```bash
-docker pull sakibanwar/gosonar
+docker run -it sakibanwar/gosonar bash
 ```
 
 ---
@@ -49,6 +49,7 @@ docker pull sakibanwar/gosonar
 
 - Easiest way:  
   ```bash
+  cd gosonar
   ./run.sh # runs benchmark
   ./run.sh <package> # runs package analysis assumes binary under go_stdlib in regular mode
   ./run.sh <package> call # runs package analysis assumes binary under go_stdlib in call resolver mode
@@ -57,7 +58,7 @@ docker pull sakibanwar/gosonar
 - Or manually:  
   ```bash
   cd src/
-  python3 main.py --worker-type <type> --binary <binary_path> --package <package_name>[other options]
+  python3 main.py --worker-type <type> --binary <binary_path> --package <package_name> [other options]
   ```
 
 ---
@@ -66,7 +67,7 @@ docker pull sakibanwar/gosonar
 
 Each subdirectory under `bins/` has a `compile.sh` to build binaries:  
 ```bash
-cd bins/<benchmark>/src
+cd bins/benchmark/src
 ./compile.sh
 ```
 
